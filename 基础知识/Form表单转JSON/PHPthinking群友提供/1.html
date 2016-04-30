@@ -1,0 +1,57 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<title>form转json</title>  
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>  
+  
+<body>  
+<form id="form1" name="form1" method="post" action="">  
+  <p>问候语 :  
+    <label for="greet"></label>  
+    <input type="text" name="greet" id="greet">  
+  </p>  
+  <p>你的名字：  
+    <label for="name"></label>  
+    <input type="text" name="name" id="name">  
+   
+  </p>  
+ 
+   
+  <input type="button" name="submit" value="提交"/>
+</form>
+</body>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $('input[name="submit"]').on('click',function(e){
+      e.preventDefault();
+      var a = {};
+      $("input[type=text]").each(function(){
+          a[$(this).attr('name')] = $(this).val();
+      });
+      console.log(JSON.stringify(a));
+      return;
+
+
+      //url   你需要异步访问、获取数据的url
+      var url = "";
+      //获取表单的所有内容
+      var param = $('#form1').serialize();
+      /* 或者传入单个参数
+      var param = {
+          greet:$('#greet').val(),
+          name:$('#name').val()
+      }*/
+      //result 为返回结果
+      $.post(url,param,function(result){
+          if(result){
+              //todo
+          }else{
+              //todo
+          }
+      });
+  });
+</script>
+</html>  

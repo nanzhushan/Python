@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<title>form-json</title>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript"  src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(function(){
+	$('#test').click(function(){
+	$.ajax({
+type: "post",
+url: "show.php",
+data: $('#form1').serialize(),
+dataType: "json",
+success: function(data){
+alert("success");
+}
+});
+			});
+		});
+</script>
+
+
+</head>  
+  
+<body>  
+<form id="form1" name="form1" method="post" action="">  
+  <p>问候语:  
+    <label for="greet"></label>  
+    <input type="text" name="greet" id="greet">  
+  </p>  
+  <p>名字:
+    <label for="name"></label>  
+    <input type="text" name="name" id="name">  
+   
+  </p>  
+ 
+   
+  <input type="button"  id="test" value="提交"/>  
+</form>  
+</body>  
+</html> 
+

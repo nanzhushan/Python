@@ -1,0 +1,51 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<script type="application/javascript" src="js/jquery-2.0.3.js"></script>  
+<title>form转json</title>  
+<script type="application/javascript">  
+  
+$.fn.serializeObject = function()    
+{    
+   var o = {};    
+   var a = this.serializeArray();    
+   $.each(a, function() {    
+       if (o[this.name]) {    
+           if (!o[this.name].push) {    
+               o[this.name] = [o[this.name]];    
+           }    
+           o[this.name].push(this.value || '');    
+       } else {    
+           o[this.name] = this.value || '';    
+       }    
+   });    
+   return o;    
+};  
+  
+function onClik(){  
+        //var data = $("#form1").serializeArray(); //自动将form表单封装成json  
+        //alert(JSON.stringify(data));  
+        var jsonuserinfo = $('#form1').serializeObject();  
+        alert(JSON.stringify(jsonuserinfo));  
+}  
+</script>  
+</head>  
+  
+<body>  
+<form id="form1" name="form1" method="post" action="">  
+  <p>姓名 :  
+    <label for="name"></label>  
+    <input type="text" name="name" id="name" />  
+  </p>  
+  <p>年龄:  
+    <label for="sex"></label>  
+    <input type="text" name="age" id="sex">  
+   
+  </p>  
+ 
+   
+  <input type="button" name="submit" onclick="onClik();" value="提交"/>  
+</form>  
+</body>  
+</html>  
