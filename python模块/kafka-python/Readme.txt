@@ -2,6 +2,8 @@
 
 http://kafka-python.readthedocs.io/en/latest/usage.html#kafkaproducer
 
+http://orchome.com/6
+
 序列化使用msgpack：
 
 pip install msgpack-python
