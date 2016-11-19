@@ -1,0 +1,5 @@
+findall
+re.findall(pattern, string[, flags])
+findall(string[, pos[, endpos]])
+
+作用：在字符串中找到正则表达式所匹配的所有子串，并组成一个列表返回
