@@ -1,0 +1,5 @@
+(1)
+#urllib库里面有个urlencode函数，可以把key-value这样的键值对转换成我们想要的格式，返回的是a=1&b=2这样的字符串
+aa = {'name':'knight','pasword':'knight'}
+cc = urllib.urlencode(aa)
+print cc
