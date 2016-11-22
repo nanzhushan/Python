@@ -5,6 +5,11 @@
 （2）
 encoding：把一个Python对象编码转换成Json字符串
 decoding：把Json格式字符串解码转换成Python对象
+
+decoding: 解码
+encoding: 编码
+
+
 对于简单数据类型（string、unicode、int、float、list、tuple、dict），可以直接处理
 
 （3）
