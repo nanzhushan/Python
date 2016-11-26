@@ -1,0 +1,4 @@
+£¨1£©×Ö·û´®´«Èëshell
+def aa():
+     x=5
+     os.system('cp -r %s /opt' % x)
