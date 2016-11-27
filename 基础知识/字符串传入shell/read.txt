@@ -1,4 +1,7 @@
 £¨1£©×Ö·û´®´«Èëshell
-def aa():
-     x=5
-     os.system('cp -r %s /opt' % x)
+
+import os
+x = 'tt'
+os.system('mkdir %s' %x)
+
+###########
