@@ -1,0 +1,12 @@
+
+
+1.用os.system(cmd)   不过取不了返回值
+
+2.用os.popen(cmd)   要得到命令的输出内容，只需再调用下read()或readlines()等 如a=os.popen(cmd).read()
+
+3.用 commands 模块。其实也是对popen的封装。此模块主要有如下方法
+commands.getstatusoutput(cmd) 返回(status, output).
+commands.getoutput(cmd) 只返回输出结果
+#####
+commands.getstatus(file) 返回ls -ld file的执行结果字符串，调用了getoutput,
+该函数已被python丢弃，不建议使用，它返回 ls -ld file 的结果（String）(返回结果太奇怪了，难怪被丢弃）
