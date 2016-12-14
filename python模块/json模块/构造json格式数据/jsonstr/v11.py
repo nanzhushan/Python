@@ -1,4 +1,6 @@
 #coding:utf8
+#用户zabbix的自动发现
+# http://crazy123.blog.51cto.com/1029610/1711148
 import os,sys,json
 url_list = ["http://baidu.com","http://www.qq.com","http://www.sina.com.cn"]
 
