@@ -1,0 +1,8 @@
+2016-12-19 09:53:09,147 - xzs - DEBUG - Hello xzs - [使用config.py:12]
+2016-12-19 09:53:09,148 - root - INFO - Hello root - [使用config.py:15]
+2016-12-19 09:57:34,913 - xzs - DEBUG - Hello xzs - [使用config.py:12]
+2016-12-19 09:57:34,913 - root - INFO - Hello root - [使用config.py:15]
+2016-12-19 09:58:25,513 - xzs - DEBUG - Hello xzs - [使用config.py:12]
+2016-12-19 09:58:25,513 - root - INFO - Hello root - [使用config.py:15]
+2016-12-19 09:59:40,667 - xzs - DEBUG - Hello xzs - [使用config.py:12]
+2016-12-19 09:59:40,667 - root - INFO - Hello root - [使用config.py:15]
